@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <p>Feet:</p>
+    <input type="number" id="inputFeet" min="1"
+    oninput="changeFeettoMeters(this.value)"
+    onchange="changeFeettoMeters(this.value)">
+    <p>Meters: <span id="outputMeters"></span> </p>
+
+    <hr>
+
+    <p>Meters:</p>
+    <input type="number" id="inputMeters" min="1"
+    oninput="changeMeterstoFeet(this.value)"
+    onchange="changeMeterstoFeet(this.value)">
+    <p>Feet:<span id="outputFeet"></span> </p>
+
+</form>
+<script type="text/javascript" src="js.js"></script>
+</body>
+</html>
